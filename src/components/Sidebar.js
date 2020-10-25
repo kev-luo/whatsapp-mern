@@ -1,7 +1,7 @@
 import './Sidebar.css';
 import { Avatar, IconButton } from '@material-ui/core';
 import { SearchOutlined, DonutLarge, Chat, MoreVert } from '@material-ui/icons';
-import Profile from './LinkedInPic_profile.jpg'
+import Profile from '../LinkedInPic_profile.jpg'
 import SidebarChat from './SidebarChat'
 
 function Sidebar() {

@@ -1,6 +1,8 @@
 import './Chat.css';
 import { Avatar, IconButton } from '@material-ui/core';
-import { SearchOutlined, AttachFile, MoreVert } from '@material-ui/icons';
+import { SearchOutlined, AttachFile, MoreVert, InsertEmoticon, Mic } from '@material-ui/icons';
+import ChatMessageSender from './ChatMessageSender';
+import ChatMessageReceiver from './ChatMessageReceiver';
 
 function Chat() {
   return (
@@ -24,8 +26,18 @@ function Chat() {
         </div>
       </div>
       <div className="chat_body">
-        <p>This is a message</p>
+        <ChatMessageSender />
+        <ChatMessageReceiver />
+        <ChatMessageSender />
       </div>   
+      <div className="chat_footer">
+        <InsertEmoticon />
+        <form>
+          <input placeholder="Type a message" type="text" />
+          <button type="submit">Send a message</button>
+        </form>
+        <Mic />
+      </div>
     </div>
   )
 }
